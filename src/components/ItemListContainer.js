@@ -5,8 +5,8 @@ const ItemListContainer = (props) => {
     return (
 
         <ul> 
-            <li>{props.producto}</li>
-            <li>{props.categoria}</li>
+            <li>{producto}</li>
+            <li>{categoria}</li>
         </ul>
           
     )

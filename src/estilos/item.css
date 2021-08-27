@@ -1,0 +1,8 @@
+.item {
+    margin: 30px;
+}
+
+.itemTitle {
+    color: var(--headerColor);
+}
+

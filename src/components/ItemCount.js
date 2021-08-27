@@ -11,7 +11,9 @@ const ItemCount = ({stock, onAdd, initial}) => {
     }
 
     const restar = () => {
-        setContador(contador - 1)
+        if(contador > initial) {
+            setContador(contador - 1)
+        }
     }
 
     const agregar = () => {
@@ -23,7 +25,7 @@ const ItemCount = ({stock, onAdd, initial}) => {
 
     return(
         <>
-          <p>Contador {contador}</p>
+          <p>Contador: {contador}</p>
           <button onClick={sumar}>+</button> 
           <button onClick={restar}>-</button>  
           <button disabled={contador>0?false:true} onClick={agregar}>Agregar al carrito</button>   
